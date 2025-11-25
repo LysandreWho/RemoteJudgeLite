@@ -55,7 +55,7 @@ Para visualizar as telas:
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [LINK_DO_SEU_REPOSITÓRIO]
+    git clone https://github.com/LysandreWho/RemoteJudgeLite.git
     ```
 2.  **Navegue até a Pasta:**
     ```bash
