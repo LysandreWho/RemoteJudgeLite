@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Cadastro - Remote Judge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        
+        <div class="left-panel">
+            <h2>Bem-vindo ao<br>Remote Judge</h2>
+            <p>Sua plataforma para exercícios de programação.</p>
+        </div>
+
+        <div class="right-panel">
+            <main class="login-container">
+                <form class="login-form" action="dashboard.html" method="GET">
+                    <h2>Crie sua Conta</h2>
+                    
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                    </div>
+
+                    <div class="password-rules">
+                        <p>Sua senha deve conter:</p>
+                        <ul>
+                            <li>Ao menos uma letra maiúscula</li>
+                            <li>Ao menos uma letra minúscula</li>
+                            <li>Ao menos um número</li>
+                            <li>Entre 8 e 30 caracteres</li>
+                        </ul>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirm-senha">Confirme sua senha</label>
+                        <input type="password" id="confirm-senha" name="confirm-senha" placeholder="Confirme sua senha" required>
+                    </div>
+                    
+                    <div class="input-group-checkbox">
+                        <input type="checkbox" id="isProfessor" name="isProfessor">
+                        <label for="isProfessor"> Sou um professor</label>
+                    </div>
+
+                    <button type="submit">Cadastrar</button>
+                    
+                    <div class="form-footer">
+                        <a href="index.html">Já tem conta? Faça login</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+
+    </div>
+</body>
+</html>

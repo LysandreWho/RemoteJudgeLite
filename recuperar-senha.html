@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha - Remote Judge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="left-panel">
+            <h2>Recuperação de Conta</h2>
+            <p>Sua plataforma de exercícios de programação.</p>
+        </div>
+        <div class="right-panel">
+            <main class="login-container">
+                <form id="recovery-form" class="login-form">
+                    <h2>Esqueceu sua senha?</h2>
+                    <p style="text-align: center; margin-top: -15px; margin-bottom: 20px;">Insira seu e-mail abaixo para receber um código de recuperação.</p>
+
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail de cadastro" required>
+                    </div>
+
+                    <button type="submit">Enviar Código</button>
+
+                    <div class="form-footer">
+                        <a href="index.html">Voltar para o Login</a>
+                    </div>
+                </form>
+
+                <div id="success-message" class="login-form" style="display: none; text-align: center;">
+                    <h2>Código Enviado!</h2>
+                    <p>Verifique sua caixa de entrada. Estamos te redirecionando para a próxima etapa...</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>

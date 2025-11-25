@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil - Remote Judge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Remote Judge</div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Exercícios</a></li>
+            </ul>
+            <ul class="user-menu">
+                <li><a href="perfil.html">Meu Perfil</a></li>
+                <li><a href="index.html" class="logout-btn">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="profile-card">
+                <h2>Editar Perfil</h2>
+                <form action="perfil.html" method="GET" style="text-align: left;">
+                    <div class="input-group">
+                        <label for="fullName">Nome Completo</label>
+                        <input type="text" id="fullName" name="fullName" value="[Nome do Usuário]" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" value="aluno.exemplo@email.com" required>
+                    </div>
+                    <div class="form-actions" style="padding-top: 10px; border-top: none;">
+                        <a href="perfil.html" class="btn logout-btn">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

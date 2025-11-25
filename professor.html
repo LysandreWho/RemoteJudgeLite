@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Professor - RemoteJudge</title>
+    <link rel="stylesheet" href="css/professor.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Remote Judge</div>
+        <ul class="nav-links">
+            <li><a href="professor.html">Exercícios entregues?</a></li>
+        </ul>
+        <ul class="user-menu">
+            <li><a href="perfil.html">Meu Perfil</a></li>
+            <li><a href="index.html" class="logout-btn">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="main-container">
+        <div class="welcome-banner">
+            <h3>Olá, [Nome do Professor]!</h3>
+            <p>Bem-vindo(a) ao seu painel. Aqui você pode gerenciar e criar os exercícios para suas turmas.</p>
+        </div>
+
+        <div class="page-header">
+            <h1>Painel de Gerenciamento</h1>
+            <a href="criar_exercicio.html" class="btn btn-primary">Criar Novo Exercício</a>
+        </div>
+
+        <div class="table-container">
+            <h2>Exercícios Cadastrados</h2>
+            <table class="exercise-table">
+                <thead>
+                    <tr>
+                        <th>Título do Problema</th>
+                        <th>Dificuldade</th>
+                        <th class="actions-header">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Problema 1001: Soma Simples</td>
+                        <td>Iniciante</td>
+                        <td class="actions-cell">
+                            <a href="#" class="btn btn-edit">Editar</a>
+                            <a href="#" class="btn btn-delete">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Problema 1002: Área do Círculo</td>
+                        <td>Intermediário</td>
+                        <td class="actions-cell">
+                            <a href="#" class="btn btn-edit">Editar</a>
+                            <a href="#" class="btn btn-delete">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Problema 1003: Fibonacci Fácil</td>
+                        <td>Avançado</td>
+                        <td class="actions-cell">
+                            <a href="#" class="btn btn-edit">Editar</a>
+                            <a href="#" class="btn btn-delete">Excluir</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+</body>
+</html>

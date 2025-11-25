@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Remote Judge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Remote Judge</div>
+            <ul class="nav-links">
+                <li><a href="#">Exercícios</a></li>
+            </ul>
+            <ul class="user-menu">
+                <li><a href="perfil.html">Meu Perfil</a></li>
+                <li><a href="index.html" class="logout-btn">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="welcome-banner">
+                <h3>Olá, [Nome do Aluno]!!</h3>
+                <p>Seja bem-vindo(a) ao seu painel. Aqui estão os desafios disponíveis para você.</p>
+            </div>
+
+            <div class="exercise-list-header">
+                <h2>Exercícios Disponíveis</h2>
+            </div>
+            
+            <div class="exercise-list">
+                <div class="exercise-item">
+                    <div class="exercise-info">
+                        <h3>Problema 1001: Soma Simples</h3>
+                        <div class="status-wrapper">
+                            <span>Status da Submissão:</span>
+                            <span class="status-tag accepted">Aceito</span>
+                        </div>
+                    </div>
+                    <div class="exercise-details">
+                        <span class="difficulty-tag easy">Iniciante</span>
+                        <a href="problema.html" class="btn btn-primary">Ver Submissão</a>
+                    </div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-info">
+                        <h3>Problema 1002: Área do Círculo</h3>
+                        <div class="status-wrapper">
+                            <span>Status da Submissão:</span>
+                            <span class="status-tag pending">Pendente</span>
+                        </div>
+                    </div>
+                    <div class="exercise-details">
+                        <span class="difficulty-tag medium">Intermediário</span>
+                        <a href="problema.html" class="btn btn-primary">Resolver Problema</a>
+                    </div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-info">
+                        <h3>Problema 1003: Fibonacci Fácil</h3>
+                        <div class="status-wrapper">
+                            <span>Status da Submissão:</span>
+                            <span class="status-tag not-submitted">Não Submetido</span>
+                        </div>
+                    </div>
+                    <div class="exercise-details">
+                        <span class="difficulty-tag hard">Avançado</span>
+                        <a href="problema.html" class="btn btn-primary">Resolver Problema</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
