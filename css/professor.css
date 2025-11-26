@@ -305,4 +305,23 @@ textarea {
 .btn-secondary:hover {
     background-color: #6a2f8b;
     color: #fff;
+
+}
+
+.test-case-box {
+    background-color: #f8f9fa; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.test-case-box h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #444;
+    border-bottom: 2px solid #007bff; 
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
 }
