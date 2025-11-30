@@ -62,6 +62,6 @@ Para visualizar as telas:
     cd remote-judge
     ```
 3.  **Abra os Arquivos:**
-    Simplesmente abra qualquer arquivo `.html` (por exemplo, `index.html` ou `dashboard.html`) no seu navegador web preferido.
+    Simplesmente abra qualquer arquivo `.html` (por exemplo, `index.html` ou `dashboard.html`) no seu navegador.
 
 -----
