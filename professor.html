@@ -10,9 +10,6 @@
 <header>
     <nav>
         <div class="logo">Remote Judge</div>
-        <ul class="nav-links">
-            <li><a href="professor.html">Exercícios entregues?</a></li>
-        </ul>
         <ul class="user-menu">
             <li><a href="perfil.html">Meu Perfil</a></li>
             <li><a href="index.html" class="logout-btn">Sair</a></li>
@@ -43,31 +40,29 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Problema 1001: Soma Simples</td>
-                        <td>Iniciante</td>
-                        <td class="actions-cell">
-                            <a href="#" class="btn btn-edit">Editar</a>
-                            <a href="#" class="btn btn-delete">Excluir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Problema 1002: Área do Círculo</td>
-                        <td>Intermediário</td>
-                        <td class="actions-cell">
-                            <a href="#" class="btn btn-edit">Editar</a>
-                            <a href="#" class="btn btn-delete">Excluir</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Problema 1003: Fibonacci Fácil</td>
-                        <td>Avançado</td>
-                        <td class="actions-cell">
-                            <a href="#" class="btn btn-edit">Editar</a>
-                            <a href="#" class="btn btn-delete">Excluir</a>
-                        </td>
-                    </tr>
-                </tbody>
+    <tr>
+        <td>Problema 1001: Soma Simples</td>
+        <td>Iniciante</td>
+        <td class="actions-cell">
+            <a href="criar_exercicio.html?mode=edit&id=1001" class="btn btn-edit">Editar</a>
+            
+            <button class="btn btn-delete" onclick="excluirExercicio(this)">Excluir</button>
+        </td>
+    </tr>
+    </tbody>
+<script>
+    function excluirExercicio(botao) {
+        // Confirmação simples
+        if (confirm("Tem certeza que deseja excluir este exercício permanentemente?")) {
+            // Encontra a linha (tr) pai do botão clicado e a remove
+            var linha = botao.closest("tr");
+            linha.remove();
+            
+            // Opcional: Feedback visual
+            alert("Exercício excluído.");
+        }
+    }
+</script>
             </table>
         </div>
     </div>
