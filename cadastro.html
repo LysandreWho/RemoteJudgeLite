@@ -60,4 +60,20 @@
 
     </div>
 </body>
+<script>
+    document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Impedindo por enquanto o envio pro backend, mas é essa a iteração que precisa ser feita
+
+        // Verifica se o checkbox de professor está marcado
+        const isProfessor = document.getElementById('isProfessor').checked;
+
+        if (isProfessor) {
+            // Se for professor, vai para a área do professor
+            window.location.href = "professor.html";
+        } else {
+            // Se for aluno, vai para o dashboard comum
+            window.location.href = "dashboard.html";
+        }
+    });
+</script>
 </html>
