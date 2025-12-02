@@ -10,6 +10,9 @@
     <header>
         <nav>
             <div class="logo">RemoteJudge</div>
+            <ul class="nav-links">
+            <li><a href="professor.html">Exercícios</a></li>
+        </ul>
             <ul>
                 <li><a href="index.html" class="logout-btn">Sair</a></li>
             </ul>
@@ -20,74 +23,88 @@
         <div class="main-container">
             <h1>Criar Novo Exercício</h1>
 
-            <form class="exercise-form">
-                <div class="form-group">
-                    <label for="title">Título do Problema</label>
-                    <input type="text" id="title" name="title" placeholder="Ex: Problema 1005: Média 1" required>
-                </div>
+<form class="exercise-form" id="formCriarExercicio">
+    <div class="form-group">
+        <label for="title">Título do Problema</label>
+        <input type="text" id="title" name="title" placeholder="Ex: Problema 1005: Média 1" required>
+    </div>
 
-                <div class="form-group">
-                    <label for="description">Descrição Completa do Problema</label>
-                    <textarea id="description" name="description" rows="10" placeholder="Inclua o enunciado do problema, formato da entrada e da saída." required></textarea>
-                </div>
+    <div class="form-group">
+        <label for="full_description">Descrição Completa do Problema</label>
+        <textarea id="full_description" name="full_description" rows="10" placeholder="Inclua o enunciado do problema..." required></textarea>
+    </div>
 
-                                <div class="form-group">
-                    <label for="description">Entrada</label>
-                    <textarea id="description" name="description" rows="10" placeholder="Inclua o enunciado do problema, formato da entrada e da saída." required></textarea>
-                </div>
+    <div class="form-group">
+        <label for="input_format">Entrada</label>
+        <textarea id="input_format" name="input_format" rows="5" placeholder="Inclua a descrição da entrada esperada." required></textarea>
+    </div>
 
-                 <div class="form-group">
-                    <label for="description">Saída</label>
-                    <textarea id="description" name="description" rows="10" placeholder="Inclua o enunciado do problema, formato da entrada e da saída." required></textarea>
-                </div>
+    <div class="form-group">
+        <label for="output_format">Saída</label>
+        <textarea id="output_format" name="output_format" rows="5" placeholder="Inclua a descrição da saída esperada." required></textarea>
+    </div>
 
-                <div class="form-group">
-                    <label for="difficulty">Nível de Dificuldade</label>
-                    <select id="difficulty" name="difficulty">
-                        <option value="iniciante">Iniciante</option>
-                        <option value="intermediario">Intermediário</option>
-                        <option value="avancado">Avançado</option>
-                    </select>
-                </div>
+    <div class="form-group">
+        <label for="difficulty">Nível de Dificuldade</label>
+        <select id="difficulty" name="difficulty">
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avancado">Avançado</option>
+        </select>
+    </div>
 
-                <div class="test-case-section">
-                    <h2>Casos de Teste</h2>
-                    <p>Forneça até 3 casos de teste. O primeiro é obrigatório para validação mínima.</p>
-                    
-                    <div class="test-case-box">
-                        <h3>Caso de Teste 1</h3>
-                        <div class="form-group">
-                            <label for="test-input-1">Entrada (Input)</label>
-                            <textarea id="test-input-1" name="test-input-1" rows="4" placeholder="Ex: 2.00" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="test-output-1">Saída Esperada (Output)</label>
-                            <textarea id="test-output-1" name="test-output-1" rows="4" placeholder="Ex: A=12.5664" required></textarea>
-                        </div>
-                    </div>
+    <div class="test-case-section">
+        <h2>Casos de Teste</h2>
+        <p>Forneça até 3 casos de teste.</p>
+        
+        <div class="test-case-box">
+            <h3>Caso de Teste 1</h3>
+            <div class="form-group">
+                <label for="test-input-1">Entrada (Input)</label>
+                <textarea id="test-input-1" name="test-input-1" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="test-output-1">Saída Esperada (Output)</label>
+                <textarea id="test-output-1" name="test-output-1" rows="4" required></textarea>
+            </div>
 
-                    <div class="test-case-box">
-                        <h3>Caso de Teste 2</h3>
-                        <div class="form-group">
-                            <label for="test-input-2">Entrada (Input)</label>
-                            <textarea id="test-input-2" name="test-input-2" rows="4"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="test-output-2">Saída Esperada (Output)</label>
-                            <textarea id="test-output-2" name="test-output-2" rows="4"></textarea>
-                        </div>
-                    </div>
+            <h3>Caso de Teste 2</h3>
+            <div class="form-group">
+                <label for="test-input-2">Entrada (Input)</label>
+                <textarea id="test-input-2" name="test-input-2" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="test-output-2">Saída Esperada (Output)</label>
+                <textarea id="test-output-2" name="test-output-2" rows="4" required></textarea>
+            </div>
 
-                    <div class="test-case-box">
-                        <h3>Caso de Teste</h3>
-                        <div class="form-group">
-                            <label for="test-input-3">Entrada (Input)</label>
-                            <textarea id="test-input-3" name="test-input-3" rows="4"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="test-output-3">Saída Esperada (Output)</label>
-                            <textarea id="test-output-3" name="test-output-3" rows="4"></textarea>
-                        </div>
+            <h3>Caso de Teste 3</h3>
+            <div class="form-group">
+                <label for="test-input-3">Entrada (Input)</label>
+                <textarea id="test-input-3" name="test-input-3" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="test-output-3">Saída Esperada (Output)</label>
+                <textarea id="test-output-3" name="test-output-3" rows="4" required></textarea>
+            </div>
+        </div>
+        
+        <div class="form-actions">
+            <a href="professor.html" class="btn btn-cancel">Cancelar</a>
+            <button type="submit" class="btn btn-primary">Criar Exercício</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    document.getElementById('formCriarExercicio').addEventListener('submit', function(e) {
+        e.preventDefault(); // Impedindo o funcionamento do backend por enquanto
+        
+        
+        alert("Exercício criado com sucesso!");
+        window.location.href = "professor.html";
+    });
+</script>
                     </div>
                 </div>
             </form>
